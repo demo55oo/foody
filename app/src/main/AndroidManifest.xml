@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.demo.foodwe">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@drawable/cancan"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/cancan"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Foodwe"
+        >
+        <meta-data
+            android:name= "com.google.android.gms.ads.APPLICATION_ID"
+            android:value= "ca-app-pub-2341497470012319~4315847129"/>
+
+
+        <activity android:name="com.demo.foodwe.homeactivity"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true"
+            />
+        <activity android:name="com.demo.foodwe.MainActivity"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

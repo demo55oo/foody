@@ -1,0 +1,50 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/secndo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.demo.secondfragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cateigerios1"
+        android:layout_width="410dp"
+        android:layout_height="606dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="405dp"
+        android:layout_height="66dp"
+        android:backgroundTintMode="@color/pnk"
+        android:foregroundTint="@color/pnk"
+        android:foregroundTintMode="@color/pnk"
+        android:queryHint="Start searching"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+     />
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="74dp"
+        android:layout_height="59dp"
+        android:indeterminateTint="@color/pnk"
+        app:layout_constraintBottom_toBottomOf="@+id/cateigerios1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cateigerios1"
+        android:visibility="gone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
